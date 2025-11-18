@@ -15,7 +15,18 @@ public class EjercicioHashMap {
     System.out.println("---------------------");
     System.out.println(listaNum);
     
-    listaNum.size();
+    System.out.println(listaNum.size()); // Imprimiendo el tamaño del HashMap
+
+    for (Integer i : listaNum.keySet()) { // Recorriendo las claves del HashMap
+        System.out.println("Clave: " + i + ", Valor: " + listaNum.get(i));
+        }
+
+    for (Integer valor : listaNum.values()){// Recorriendo los valores del HashMap
+        System.out.println("Valor: " + valor );// Imprimiendo la clave asociada al valor
     }
+
+
+    }
+
 
 }
